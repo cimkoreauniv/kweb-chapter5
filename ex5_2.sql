@@ -1,7 +1,7 @@
 --1
 SELECT `users`.`id`, `name`, `train`, `seat_number`
 FROM `users` INNER JOIN `tickets` ON `users`.`id`=`tickets`.`user`
-WHERE `tickets`.`train`=11 ORDER BY `seat_number` ASC;\
+WHERE `tickets`.`train`=11 ORDER BY `seat_number` ASC;
 
 --2
 SELECT `users`.`id`, `users`.`name`, Count(*) as `trains_count`,
